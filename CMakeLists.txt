@@ -20,9 +20,6 @@ find_package(Qt6 COMPONENTS Widgets Gui Core REQUIRED)
 
 add_executable(GameEngine src/main.cpp
         src/editor/Editor.cpp
-        src/editor/mainwidget.cpp
-        src/editor/mainwidget.h
-        src/editor/mainwidget.ui
         src/editor/startwidget.cpp
         src/editor/startwidget.h
         src/editor/startwidget.ui
@@ -31,6 +28,9 @@ add_executable(GameEngine src/main.cpp
         src/editor/newprojectdialog.h
         src/editor/newprojectdialog.ui
         src/Define.h
+        src/editor/mainwidget.cpp
+        src/editor/mainwidget.h
+        assets/main.qrc
 )
 
 target_link_libraries(GameEngine PRIVATE OpenAL::OpenAL)

@@ -2,10 +2,22 @@
 #include "mainwidget.h"
 #include "startwidget.h"
 #include "Editor.h"
+
+#include <qfile.h>
+
 #include "spdlog/spdlog.h"
+#include <QStyleFactory>
 
 Editor::Editor(int argc, char **argv) : QApplication(argc, argv) {
-    // 可在此初始化其他资源（如果需要）
+    Editor::setStyle(QStyleFactory::create("Fusion"));
+    QFile styleSheetFile(":/styles/dark.qss");
+    if (styleSheetFile.open(QFile::ReadOnly)) {
+        QString styleSheet = QLatin1String(styleSheetFile.readAll());
+        this->setStyleSheet(styleSheet);
+        styleSheetFile.close();
+    } else {
+        qWarning() << "Could not open stylesheet file:/styles/dark_theme.qss";
+    }
 }
 
 // 启动编辑器

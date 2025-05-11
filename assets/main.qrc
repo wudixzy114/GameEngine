@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file alias="dark.qss">styles/dark.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <!--        <file alias="icons/app.png">icons/app.png</file>-->
+        <file alias="new.png">icons/new.png</file>
+        <file alias="open.png">icons/open.png</file>
+        <file alias="save.png">icons/save.png</file>
+        <file alias="undo.png">icons/undo.png</file>
+        <file alias="/redo.png">icons/redo.png</file>
+        <file alias="play.png">icons/play.png</file>
+        <file alias="pause.png">icons/pause.png</file>
+        <file alias="/stop.png">icons/stop.png</file>
+    </qresource>
+</RCC>
