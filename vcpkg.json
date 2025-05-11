@@ -1,0 +1,42 @@
+{
+  "name" : "gameengine",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "3e5b8de5f6ebe844bee9d9eba0aed35c652e3c9c",
+  "dependencies" : [ {
+    "name" : "bullet3",
+    "version>=" : "3.25#3"
+  }, {
+    "name" : "fmt",
+    "version>=" : "11.0.2#1"
+  }, {
+    "name" : "glfw3",
+    "version>=" : "3.4#1"
+  }, {
+    "name" : "imgui",
+    "version>=" : "1.91.9"
+  }, {
+    "name" : "openal-soft",
+    "version>=" : "1.24.3#1"
+  }, {
+    "name" : "rapidjson",
+    "version>=" : "2025-02-26"
+  }, {
+    "name" : "sdl3-image",
+    "version>=" : "3.2.4"
+  }, {
+    "name" : "sdl3",
+    "version>=" : "3.2.12"
+  }, {
+    "name" : "spdlog",
+    "version>=" : "1.15.2"
+  }, {
+    "name" : "vcpkg-cmake-config",
+    "version>=" : "2024-05-23"
+  }, {
+    "name" : "vcpkg-cmake",
+    "version>=" : "2024-04-23"
+  }, {
+    "name" : "glm",
+    "version>=" : "1.0.1#3"
+  } ]
+}
