@@ -12,6 +12,7 @@ find_package(SDL3_image CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 find_package(SDL3 CONFIG REQUIRED)
 find_package(OpenAL CONFIG REQUIRED)
+find_package(Vulkan REQUIRED)
 
 add_executable(GameEngine src/main.cpp)
 
@@ -25,4 +26,5 @@ target_link_libraries(GameEngine PRIVATE ${BULLET_LIBRARIES})
 target_link_libraries(GameEngine PRIVATE Bullet3Dynamics)
 target_link_libraries(GameEngine PRIVATE imgui::imgui)
 target_link_libraries(GameEngine PRIVATE $<IF:$<TARGET_EXISTS:SDL3_image::SDL3_image-shared>,SDL3_image::SDL3_image-shared,SDL3_image::SDL3_image-static>)
+target_link_libraries(GameEngine PRIVATE Vulkan::Vulkan)
 
